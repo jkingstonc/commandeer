@@ -1,9 +1,16 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
+pub struct Commandeer{
+
 }
 
-pub fn parse(){
-    println!("hello, world!");
+impl Commandeer{
+
+    pub fn cmd(&self, cmd: std::string::String){
+        println!("registering command `{}`.", cmd);
+    }
+
+    pub fn exec(&self, cmd: std::string::String){
+        println!("parsing `{}`.", cmd);
+    }
 }
 
 #[cfg(test)]
